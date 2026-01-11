@@ -5,6 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '375px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '3xl': '1920px',
+    },
     extend: {
       colors: {
         'deep-black': '#0B0B0B',
@@ -28,6 +37,11 @@ export default {
       },
       backgroundImage: {
         'gold-gradient': 'linear-gradient(135deg, #C9A24D, #F5E6A8, #B08D3C)'
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
       }
     },
   },
