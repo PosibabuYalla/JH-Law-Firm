@@ -1,6 +1,7 @@
 import { FaCheckCircle, FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import profjhImage from '../assets/images/profjh.png'
 
 const Hero = () => {
   const [badgeRef, badgeVisible] = useScrollAnimation(0.2)
@@ -110,7 +111,7 @@ const Hero = () => {
             <div className="lg:col-span-5 flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div ref={cardRef} className={`animate-on-scroll animate-scale ${cardVisible ? 'visible delay-4' : ''}`}>
                 <img 
-                  src="src/assets/images/profjh.png" 
+                  src={profjhImage} 
                   alt="Professional" 
                   className="w-full h-auto max-w-md rounded-2xl shadow-2xl border border-gold-400/20"
                 />
